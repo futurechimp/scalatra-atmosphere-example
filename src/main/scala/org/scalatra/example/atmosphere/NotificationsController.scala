@@ -1,9 +1,23 @@
 package org.scalatra.example.atmosphere
 
+// Default imports from a stock Scalatra g8 code generator:
 import org.scalatra._
 import scalate.ScalateSupport
 
-class NotificationsController extends ScalatraServlet with ScalateSupport {
+// Project-specific imports
+import org.scalatra.atmosphere._
+import org.scalatra.json.{JValueResult, JacksonJsonSupport}
+import org.json4s._
+import JsonDSL._
+import java.util.Date
+import java.text.SimpleDateFormat
+
+class NotificationsController extends ScalatraServlet 
+  with ScalateSupport with JValueResult 
+  with JacksonJsonSupport with SessionSupport 
+  with AtmosphereSupport {
+
+  implicit protected val jsonFormats: Formats = DefaultFormats
 
   get("/") {
     <html>
