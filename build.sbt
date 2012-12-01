@@ -22,3 +22,4 @@ libraryDependencies ++= Seq(
 
 resolvers += "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 
+resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
