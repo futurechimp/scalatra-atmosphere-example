@@ -13,6 +13,8 @@ seq(webSettings :_*)
 libraryDependencies ++= Seq(
   "org.scalatra" % "scalatra" % "2.2.0-SNAPSHOT",
   "org.scalatra" % "scalatra-atmosphere" % "2.2.0-SNAPSHOT",
+  "org.scalatra" % "scalatra-json" % "2.2.0-SNAPSHOT",
+  "org.json4s"   %% "json4s-jackson" % "3.0.0",
   "org.scalatra" % "scalatra-scalate" % "2.2.0-SNAPSHOT",
   "org.scalatra" % "scalatra-specs2" % "2.2.0-SNAPSHOT" % "test",
   "ch.qos.logback" % "logback-classic" % "1.0.6" % "runtime",
