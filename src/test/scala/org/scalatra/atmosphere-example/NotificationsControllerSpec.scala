@@ -1,4 +1,4 @@
-package org.scalatra.atmosphere-example
+package org.scalatra.example.atmosphere
 
 import org.scalatra.test.specs2._
 
