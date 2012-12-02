@@ -13,11 +13,6 @@ $(function() {
   var subSocket;
   var transport = 'websocket';
 
-  /** 
-   * The following code is just here for demonstration purpose and is  
-   * not required.
-   */
-
   /**  
    * Used to demonstrate the request.onTransportFailure callback. 
    * Not mandatory.
@@ -25,7 +20,7 @@ $(function() {
   var sseSupported = false;
 
   /**
-   * Define a list of transports. The Atmosphere client code will take
+   * Define a list of transports. The Atmosphere library code will take
    * care of checking whether each of them is supported or not. 
    */
   var transports = [];
@@ -62,7 +57,9 @@ $(function() {
   /* Below is code that can be re-used */
 
 
-  // We are now ready to cut the request
+  /**
+   * Make a persistent connection to our server-side atmosphere method.
+   */
   var request = {
     url: "/the-chat",
     contentType: "application/json",
