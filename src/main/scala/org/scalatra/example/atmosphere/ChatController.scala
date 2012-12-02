@@ -11,7 +11,7 @@ import java.util.Date
 import java.text.SimpleDateFormat
 import org.fusesource.scalate.Template
 
-class NotificationsController extends ScalatraServlet 
+class ChatController extends ScalatraServlet 
   with ScalateSupport with JValueResult 
   with JacksonJsonSupport with SessionSupport 
   with AtmosphereSupport {
@@ -24,7 +24,7 @@ class NotificationsController extends ScalatraServlet
   }
 
 
-  atmosphere("/notifications") {
+  atmosphere("/the-chat") {
     new AtmosphereClient {
       def receive: AtmoReceive = {
         case Connected =>
