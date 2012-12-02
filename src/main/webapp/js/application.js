@@ -43,7 +43,7 @@ $(function() {
   $.each(transports, function (index, tr) {
      var req = new $.atmosphere.AtmosphereRequest();
 
-     req.url = "/notifications";
+     req.url = "/the-chat";
      req.contentType = "application/json";
      req.transport = tr;
      req.headers = { "X-SCALATRA-SAMPLE" : "true" };
@@ -64,7 +64,7 @@ $(function() {
 
   // We are now ready to cut the request
   var request = {
-    url: "/notifications",
+    url: "/the-chat",
     contentType: "application/json",
     logLevel: 'debug',
     shared: true,
